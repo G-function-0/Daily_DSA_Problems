@@ -12,6 +12,11 @@
         reduce the freq of current element and 
         add current ele to freqPrev so that e can track it as previous now 
         do the same check and MOD thing like last Approach
+
+    Why array is better than HashMap? (Just some CP Stuff)
+        just understand their is some time taken during creating for each key-value pair in map 
+        that time makes HashMaps 3-5 times slower than Arrays 
+        So if the constraines allowe always prefer ARRAY over HashMap
  */
 class Solution {
 
