@@ -1,3 +1,6 @@
+
+import java.util.HashMap;
+
 // LEETCODE solution
 
 /*
