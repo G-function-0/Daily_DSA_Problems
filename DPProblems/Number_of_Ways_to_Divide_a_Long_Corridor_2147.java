@@ -1,7 +1,7 @@
 //LeetCode Solution 
 /*
 Approach O(n):
-    so i havent done p approach yet but yeah lets see this one :
+    so i havent done dp approach yet but yeah lets see this one :
     first i have scaned through the string and figuredout how many seats are thier in total 
     if the numbers are odd then simply return 0
     no take to vars tracking left seats and right seats 
