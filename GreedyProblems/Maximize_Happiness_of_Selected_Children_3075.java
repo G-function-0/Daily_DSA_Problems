@@ -28,20 +28,20 @@ class Solution {
 
 //Priority Queue  solution O(n+klog(k));
 
-class Solution {
-    public long maximumHappinessSum(int[] happiness, int k) {
-        PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
-        long ans =0;
-        for(int h : happiness){
-            pq.add(h);
-        }
-        int i =1;
+// class Solution {
+//     public long maximumHappinessSum(int[] happiness, int k) {
+//         PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
+//         long ans =0;
+//         for(int h : happiness){
+//             pq.add(h);
+//         }
+//         int i =1;
 
-        while(i != k+1){
-            int happy = pq.poll()-i+1;
-            ans += (happy > 0)? happy : 0;
-            i++;
-        }
-        return ans;
-    }
-}
+//         while(i != k+1){
+//             int happy = pq.poll()-i+1;
+//             ans += (happy > 0)? happy : 0;
+//             i++;
+//         }
+//         return ans;
+//     }
+// }
