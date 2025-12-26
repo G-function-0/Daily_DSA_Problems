@@ -49,3 +49,35 @@ class Solution {
     
 }
 
+// Memoized Recursion SOlution 
+
+// class Solution {
+//     public int knapsack(int W, int val[], int wt[]) {
+//         // code here
+//         Solution obj = new Solution();
+//         int n = val.length;
+//         int dp [][] = new int[n][W];
+//         for(int i =0;i < n;i++ ){
+//             for(int j=0;j < W;j++){
+//                 dp[i][j] = -1;
+//             }
+//         }
+//         return obj.knapRecr(val,wt,val.length,W, dp);
+//     }
+    
+    
+//     public static int knapRecr(int val[], int wt [], int i, int W, int dp[][]){
+//         if(i==0 || W==0){
+//             return 0;
+//         }
+//         if(dp[i-1][W-1]!=-1){
+//             return dp[i-1][W-1];
+//         }
+//         int inc=0;
+//         if(wt[i-1]<=W){
+//             inc = val[i-1]+knapRecr(val,wt, i-1,W-wt[i-1],dp);
+//         }
+//         int ex = knapRecr(val,wt, i-1 , W,dp);
+//         return dp[i-1][W-1] = Math.max(inc,ex);
+//     }
+// }
