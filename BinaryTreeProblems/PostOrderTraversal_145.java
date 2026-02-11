@@ -16,6 +16,33 @@
  *     }
  * }
  */
+//Post order using 2 Stack
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+            List<Integer> l = new LinkedList<>();
+            Stack<TreeNode> s1 = new Stack<>();
+            Stack<TreeNode> s2 = new Stack<>();
+            if(root == null){
+                return l;
+            }
+            s1.push(root);
+            while(!s1.isEmpty()){
+                TreeNode curr = s1.pop();
+                if(curr.left != null){
+                    s1.push(curr.left);
+                }
+                if(curr.right != null){
+                    s1.push(curr.right);
+                }
+                s2.push(curr);
+            }
+            while(!s2.isEmpty()){
+                l.add(s2.pop().val);
+            }
+            return l;
+    }
+
+}
 
 
 // PostOrder traversal -> Recursion
